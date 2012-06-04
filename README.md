@@ -22,7 +22,7 @@ http://jephjohnson.com/compare
 
 <h3>Support and Testing:</h3>
 
-Information about what version or versions of jQuery this plugin has been tested with, what browsers it has been tested in, and where the unit tests reside (so you can test it yourself).
+Information about what version or versions of jQuery this plugin has been tested with, what browsers it has been tested in.
 
 
 <h3>jQuery Versions:</h3>
