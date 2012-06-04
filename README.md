@@ -10,7 +10,7 @@ Visit the project page for more information and usage examples!
 
 <h3>Documentation:</h3>
 
-https://github.com/orojeph/jQuery-Compare
+https://github.com/jephjohnson/jQuery-Compare
 
 
 <h3>Examples:</h3>
