@@ -3,7 +3,7 @@
  * Compare items side by side
  * http://jephjohnson.com
  * Dual licensed under the MIT and GPL licenses.
- * https://github.com/orojeph/jQuery-Compare
+ * https://github.com/jephjohnson/jQuery-Compare
 */
 (function($){
     $.fn.extend({
