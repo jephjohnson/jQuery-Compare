@@ -22,7 +22,8 @@
                   var o =options;
                   var container = $(this);
 									var activated = o.active.replace(".", "");
-                 
+									
+                 //if we are using checkboxes, uncheck them all when loading the page//
 								 	$(o.checkboxes).filter(':checked').each(function () {
         						this.checked = false;
     							});
@@ -44,29 +45,32 @@
 																		
 									$(o.myclass).each(function (i, l) {
         						$(this).attr('id', o.myid + i);
-    							}); 
+    							});
 									
-									$(o.checkboxes).change(function () {
-
-        						var index = $(o.checkboxes).index(this);
+									$(o.checkboxes).click(function () {
+										
+										var index = $(o.checkboxes).index(this);
         						var $previousSelected = $(o.active);
-
-										if ($(this).is(":checked")) {
-																				
-											$(o.myclass).each(function (i) {
-															if (i== index) {
-																		$(this).addClass(activated);
-																		if ($(o.checkboxes).filter(':checked').length > 1) {
-																				if ( !$previousSelected.hasClass(activated) ) {
-                                           $previousSelected.addClass(activated);
-                                          }
-																				container.isotope('updateSortData', $(this)).isotope('updateSortData', $previousSelected).isotope();
-																			}
-															}
-												});
+									
+      							if(!(o.checkboxes=='input')){
+											$(this).toggleClass(activated);
 										}
-										else  {
-											$(o.myclass).each(function (i) {
+										
+										if($(this).hasClass(activated) || $(this).is(":checked")){
+													$(o.myclass).each(function (i) {
+																	if (i== index) {
+																				$(this).addClass(activated);
+																				if ($(o.active).length > 1) {
+																						if ( !$previousSelected.hasClass(activated) ) {
+																							 $previousSelected.addClass(activated);
+																							}
+																						container.isotope('updateSortData', $(this)).isotope('updateSortData', $previousSelected).isotope();
+																						}
+																		}
+															});
+											}
+											else {
+												$(o.myclass).each(function (i) {
 													if (i == index) {
 															$(this).removeClass(activated);
 															$previousSelected.hasClass(activated);
@@ -74,8 +78,8 @@
 														}
 													
 												});
-										}
-								});
+											}
+   							 	});
 						});
         }
     });
