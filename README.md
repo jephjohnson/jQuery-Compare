@@ -18,6 +18,7 @@ https://github.com/jephjohnson/jQuery-Compare
 This working example illustrates how the plugin can be used.
 
 http://jephjohnson.com/compare
+http://jephjohnson.com/compare/checkboxes/
 
 
 <h3>Support and Testing:</h3>
