@@ -37,7 +37,7 @@ Internet Explorer 8-9, Firefox 12, Chrome 19, Safari 5.1.5, iPhone 4.
 
 
 <h3>Known issues:</h3>
--
+</br>
 
 
 <h3>License:</h3>
