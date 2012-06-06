@@ -33,7 +33,7 @@ Information about what version or versions of jQuery this plugin has been tested
 
 <h3>Browsers Tested:</h3>
 
-Internet Explorer 8-9, Firefox 12, Chrome 19, Safari 5.1.5, iPhone 4.
+Internet Explorer 7-9, Firefox 12, Chrome 19, Safari 5.1.5, iPhone 4.
 
 
 <h3>Known issues:</h3>
