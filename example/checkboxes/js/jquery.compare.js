@@ -60,6 +60,9 @@
 													$(o.myclass).each(function (i) {
 																	if (i== index) {
 																				$(this).addClass(activated);
+																				if($(window).height()<container.height()){
+																						$('html, body').delay(200).animate({scrollTop:0}, 700);
+																				}
 																				if ($(o.active).length > 1) {
 																						if ( !$previousSelected.hasClass(activated) ) {
 																							 $previousSelected.addClass(activated);
